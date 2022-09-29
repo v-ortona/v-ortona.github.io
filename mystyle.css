@@ -21,6 +21,7 @@ body {
   }
 
   /* Add a black background color to the top navigation */
+  /* https://www.w3schools.com/css/css_navbar.asp */
   .navbar {
     background-color: #333;
     overflow: hidden;
@@ -41,7 +42,50 @@ body {
     color: rgb(0, 0, 0);
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
+  /* secret link invisible at first */
+  #secret{
+    opacity: 0;
+    font-style: italic;
+    color: plum;
+  }
+
+  /* secret link un-invisibles when you hover over about me */
+  /* https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered */
+  .navbar a:hover + #secret {
+    opacity: 1;
+  }
+
+  #secretheader {
+    font-style: italic;
+    color: plum;
+  }
+
+  /* CSS animations to make background go crazy */
+  /* https://www.w3schools.com/css/css3_animations.asp */
+  #secretpage {
+    background-color: green;
+    animation-name: secretanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes secretanimation {
+    from {background-color: green;}
+    to {background-color: purple;}
+  }
+
+
+  /* Rotate flat earth when you hover over it */
+  /* https://www.w3schools.com/css/css3_2dtransforms.asp */
+  #flatearth:hover {
+    animation-name: flatearthanimation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes flatearthanimation {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
   }
