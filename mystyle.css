@@ -2,6 +2,7 @@ body {
     background-color: lightblue;
     margin-left: 1em;
     margin-right: 1em;
+    cursor: url('https://spng.pngfind.com/pngs/s/102-1027597_middle-finger-cursor-png-transparent-png.png'), auto;
   }
   
   h1 {
@@ -88,4 +89,8 @@ body {
   @keyframes flatearthanimation {
     from {transform: rotateX(0deg);}
     to {transform: rotateX(360deg);}
+  }
+
+  #gmap{
+      cursor: url('https://i.imgur.com/jUuFpZA.png'), auto;
   }
