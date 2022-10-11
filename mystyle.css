@@ -1,96 +1,96 @@
 body {
-    background-color: lightblue;
-    margin-left: 1em;
-    margin-right: 1em;
-    cursor: url('https://spng.pngfind.com/pngs/s/102-1027597_middle-finger-cursor-png-transparent-png.png'), auto;
-  }
-  
-  h1 {
-    color: green;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+  background-color: lightblue;
+  margin-left: 1em;
+  margin-right: 1em;
+  cursor: url('https://spng.pngfind.com/pngs/s/102-1027597_middle-finger-cursor-png-transparent-png.png'), auto;
+}
 
-  h2 {
-    color: green;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+h1 {
+  color: green;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
-  .caption {
-    font-size: 0.8em;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-  }
+h2 {
+  color: green;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
-  /* Add a black background color to the top navigation */
-  /* https://www.w3schools.com/css/css_navbar.asp */
-  .navbar {
-    background-color: #333;
-    overflow: hidden;
-  }
+.caption {
+  font-size: 0.8em;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+}
 
-  /* Style the links inside the navigation bar */
-  .navbar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 1em 1em;
-    text-decoration: none;
-  }
+/* Add a black background color to the top navigation */
+/* https://www.w3schools.com/css/css_navbar.asp */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
 
-  /* Change the color of links on hover */
-  .navbar a:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-  }
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+}
 
-  /* secret link invisible at first */
-  #secret{
-    opacity: 0;
-    font-style: italic;
-    color: plum;
-  }
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
 
-  /* secret link un-invisibles when you hover over about me */
-  /* https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered */
-  .navbar a:hover + #secret {
-    opacity: 1;
-  }
+/* secret link invisible at first */
+#secret{
+  opacity: 0;
+  font-style: italic;
+  color: plum;
+}
 
-  #secretheader {
-    font-style: italic;
-    color: plum;
-  }
+/* secret link un-invisibles when you hover over about me */
+/* https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered */
+.navbar a:hover + #secret {
+  opacity: 1;
+}
 
-  /* CSS animations to make background go crazy */
-  /* https://www.w3schools.com/css/css3_animations.asp */
-  #secretpage {
-    background-color: green;
-    animation-name: secretanimation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
+#secretheader {
+  font-style: italic;
+  color: plum;
+}
 
-  @keyframes secretanimation {
-    from {background-color: green;}
-    to {background-color: purple;}
-  }
+#customcursor {
+  cursor: url('/images/custom-cursor.png'), help;
+}
+
+/* CSS animations to make background go crazy */
+/* https://www.w3schools.com/css/css3_animations.asp */
+#secretpage {
+  background-color: green;
+  animation-name: secretanimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes secretanimation {
+  from {background-color: green;}
+  to {background-color: purple;}
+}
 
 
-  /* Rotate flat earth when you hover over it */
-  /* https://www.w3schools.com/css/css3_2dtransforms.asp */
-  #flatearth:hover {
-    animation-name: flatearthanimation;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-  }
+/* Rotate flat earth when you hover over it */
+/* https://www.w3schools.com/css/css3_2dtransforms.asp */
+#flatearth:hover {
+  animation-name: flatearthanimation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
 
-  @keyframes flatearthanimation {
-    from {transform: rotateX(0deg);}
-    to {transform: rotateX(360deg);}
-  }
-
-  #gmap{
-      cursor: url('https://i.imgur.com/jUuFpZA.png'), auto;
-  }
+@keyframes flatearthanimation {
+  from {transform: rotateX(0deg);}
+  to {transform: rotateX(360deg);}
+}
