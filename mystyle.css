@@ -61,8 +61,8 @@ h2 {
   color: plum;
 }
 
-#customcursor {
-  cursor: url('/images/custom-cursor.png'), help;
+img {
+  cursor: url('/images/output-onlinepngtools.png'), help;
 }
 
 /* CSS animations to make background go crazy */
