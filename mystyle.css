@@ -61,7 +61,7 @@ h2 {
   color: plum;
 }
 
-img {
+#customcursor {
   cursor: url('/images/output-onlinepngtools.png'), help;
 }
 
