@@ -3,7 +3,6 @@ body {
   margin-left: 1em;
   margin-right: 1em;
   font-family: 'Courier New', Courier, monospace;
-  color: green
 }
 
 h1 {
@@ -24,6 +23,14 @@ h3 {
   color: green;
   font-size: 1em;
   font-style: italic;
+}
+
+/* increase spacing to made text harder to read (but cooler looking)*/
+p {
+  color: green;
+  font-size: medium;
+  letter-spacing: 0.1em; 
+  word-spacing: 0.1em
 }
 
 .gallery {
@@ -84,6 +91,7 @@ h3 {
 ul{
   display: inline-block;
   text-align: left;
+  color: green
 }
 
 footer {
